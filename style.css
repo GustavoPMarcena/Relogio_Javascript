@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #bf5bf3;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    padding-top: 0;
+    margin: 0;
+
+}
+
+header ul {
+    display: flex;
+    justify-content:space-between;
+   
+}
+
+header ul li{
+    list-style: none;
+    margin-right: 50px;
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    text-align: center;
+    justify-content: center;
+}
+.cronometer {
+    margin-top: 20vh;
+}
+
+.cronometer h1{
+    font-size: 70px;
+ 
+}
+
+
+.cronometer #timeLabel {
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    padding: 30px ;
+    border-radius: 50px;
+    font-size: 5rem;
+    font-weight:300;
+   
+}
+
+
+.buttons #startButton{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 2rem;
+}
+
+.buttons #pauseButton{
+    display: none;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 2rem;
+}
+
+.buttons #resetButton{
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 2rem;
+}
