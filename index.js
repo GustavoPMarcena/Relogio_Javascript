@@ -20,12 +20,12 @@ startBtn.addEventListener("click", () => {
         interval = setInterval(timeUpdate, 1000);
         startBtn.style.display = "none";
         pauseBtn.style.display = "unset";
-        
+
     }
 });
 
 pauseBtn.addEventListener("click", () => {
-    if (!paused){
+    if (!paused) {
         paused = true;
         clearInterval(interval);
         pauseBtn.style.display = "none";
@@ -34,14 +34,16 @@ pauseBtn.addEventListener("click", () => {
 });
 
 resetBtn.addEventListener("click", () => {
-   hours = 0;
-   minuts = 0;
-   seconds = 0;
-   timePassed = 0;
-   paused = true;
-   initialTime = 0; 
-   clearInterval(interval);
-   timeLb.textContent = "00:00:00";
+    hours = 0;
+    minuts = 0;
+    seconds = 0;
+    timePassed = 0;
+    paused = true;
+    initialTime = 0;
+    clearInterval(interval);
+    pauseBtn.style.display = "none";
+    startBtn.style.display = "unset";
+    timeLb.textContent = "00:00:00";
 });
 
 function timeUpdate() {
